@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(cat:*)",
+      "Bash(git restore:*)",
+      "Bash(python run_update.py:*)",
+      "Bash(python run_history.py:*)",
+      "Bash(git commit:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(git rm:*)",
+      "Bash(grep:*)",
+      "Bash(.venv/bin/python:*)",
+      "WebFetch(domain:ppg.ly.gov.tw)",
+      "Bash(ls:*)",
+      "Bash(test:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
