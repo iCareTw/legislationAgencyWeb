@@ -1,0 +1,116 @@
+{
+  "organizers": [
+    {
+      "id": "1",
+      "name": "內政委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "5",
+      "name": "經濟委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "6",
+      "name": "財政委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "8",
+      "name": "教育及文化委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "9",
+      "name": "交通委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "12",
+      "name": "社會福利及衛生環境委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "13",
+      "name": "程序委員會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "15",
+      "name": "修憲委員會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "16",
+      "name": "經費稽核委員會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "17",
+      "name": "外交及國防委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "18",
+      "name": "司法及法制委員會",
+      "type": "standing",
+      "enabled": true
+    },
+    {
+      "id": "19",
+      "name": "院會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "23",
+      "name": "紀律委員會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "32",
+      "name": "全院委員會",
+      "type": "committee",
+      "enabled": true
+    },
+    {
+      "id": "33",
+      "name": "朝野黨團協商",
+      "type": "party_negotiation",
+      "enabled": true
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "type": "committee",
+      "enabled": true
+    }
+  ],
+  "crawler_config": {
+    "base_url": "https://ivod.ly.gov.tw",
+    "endpoints": {
+      "list_dates": "/Demand/ListCommittee/ListDate/{committee_id}",
+      "list_videos": "/Demand/ListCommittee/ListVideo/{committee_id}/{date}?page={page}"
+    },
+    "rate_limit": {
+      "delay_min": 1,
+      "delay_max": 3,
+      "max_concurrent": 3
+    },
+    "retry": {
+      "max_attempts": 3,
+      "backoff_base": 1
+    }
+  }
+}

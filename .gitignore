@@ -29,4 +29,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # 聚合資料（由腳本生成）
-public/data/
+public/data/aggregated.json
+# Keep committees.json (synced from parent repo)
+!public/data/committees.json
