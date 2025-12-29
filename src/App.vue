@@ -78,7 +78,7 @@ onMounted(async () => {
   try {
     const committeesRes = await fetch('/data/committees.json')
     const committeesData = await committeesRes.json()
-    committees.value = committeesData.filter(c => c.type === 'standing')
+    committees.value = committeesData.organizers.filter(c => c.type === 'standing')
 
     selectedCommittees.value = committees.value.map(c => c.id)
 
